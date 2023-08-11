@@ -1,0 +1,27 @@
+# Key value pairs in yaml
+#key:value
+"fruit": "apple"
+"vegetable": ["potato", "tomato"]
+--- # --- used to separate the different types of documents
+
+# List (yaml is case sensitive apple and Apple are two different things)
+# indentation matters!
+- apple
+- mango
+- banana
+- Apple
+---
+# Block style
+cities:
+  - new york city
+  - lahore
+  - beijing
+---
+# Inline Style
+cities: [new york city, lahore, london]
+---
+# Dictionary
+{ mango: "yellow color", age: 22 }
+---
+
+... # ... tells that document is ended
