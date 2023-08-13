@@ -3,4 +3,36 @@ name: mashood ali
 fruit: "apple"
 job: "SE"
 ---
+# storing data in multiple lines
+bio: !!str |
+  my name is mashood 
+  ali and i am a software engineer.
 
+# write a single line in multiple lines
+message: !!str >
+  this all will be in 
+  one line
+
+number: 123
+marks: 91.98
+booleanValue: !!bool No # n ,N, No, false, False, FALSE same for true - y,Y, Yes, true,True
+
+#specify the type
+zero: !!int 0
+positiveNumber: !!int 123
+negativeNumber: !!int -45
+binaryNumber: !!int 0b1110
+octalNumber: !!int 0655
+hexNumber: !!int 0x45
+commaValue: !!int +540_000
+# floating types
+mark: !!float 91.4
+inifinte: !!float .inf
+not a num: !!float .nan
+
+# null
+nullValue: !!null Null # null NULL ~
+~: this is also null key
+
+# date and time
+date_and_time: !!timestamp "2017-08-22T17:43:22Z"
