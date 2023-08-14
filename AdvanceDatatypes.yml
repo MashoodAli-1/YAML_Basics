@@ -1,0 +1,35 @@
+student: !!seq
+  - marks
+  - name
+  - roll_no
+
+# same like
+cities: ["lahore", "fsd"]
+
+# some of the keys of the seq are empty
+# sparse seq
+
+sparse seq:
+  - one
+  - two
+  -
+  - four
+  - Null
+
+# nested sequence
+nested: !!seq
+  - - mango
+    - apple
+    - banana
+  - - marks
+    - roll
+# key: value pairs
+# !!map
+
+# array of hashtables
+pair example: !!pair
+  - job: student
+  - job: teacher
+
+# same as
+roles: !!pair [job: student, job: teacher]
