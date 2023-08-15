@@ -33,3 +33,34 @@ pair example: !!pair
 
 # same as
 roles: !!pair [job: student, job: teacher]
+
+# !!set will allow you to hve unique values
+names: !!set
+  ? mashood
+  ? ali
+  ? ahmad
+
+# dictionary  !!omap
+people: !!omap
+  - mashood:
+      - age: 22
+      - degree: cs
+      - nationality: pakistan
+  - ahmad:
+      - age: 18
+      - degree: cs
+      - nationality: pakistan
+
+# reusing properties using anchors
+likings: &likes
+  fav fruit: mango
+  fav sport: cricket
+
+person1:
+  name: mashood
+  <<: *likes
+
+person2:
+  name: ali
+  <<: *likes
+  fav sport: table tennis # override the fav sport property of likings
