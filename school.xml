@@ -1,0 +1,11 @@
+<!-- XML: extensible markup language -->
+<?xml version="1.0" encoding="UTF-8"?>
+
+<School name="Al-Ghazali" principal="ali">
+    <Students >
+        <Student id = "1234567">
+            <Name>Ali</Name>
+            <rollno> 29 </rollno>
+        </Student>
+    </Students>
+</School>
